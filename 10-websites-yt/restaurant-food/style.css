@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Macondo&family=Oxygen:wght@300;400;700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: url(./bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #e28743;
+}
+
+.big-container {
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+.pre-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+} 
+
+.logo {
+    font-size: 30px;
+}
+
+.contact {
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav li {
+    flex: 1 auto;
+    list-style: none;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #e28743;
+}
+
+.home {
+    font-weight: bold;
+    background-color: white;
+    color: #e28743;
+}
+
+.btn-book-tbl-1 {
+    background: #ba5101;
+}
+
+nav a:hover {
+    opacity: 0.85;
+    transition: ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+    font-size: 35px;
+}
+
+.container h1 {
+    font-weight: 300;
+    padding: 10px 15px;
+    color: whitesmoke;
+    background-color: #e28743;
+    border-radius: 5px;
+}
+
+.btn-book-tbl-2, .btn-view-menu {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.btn-book-tbl-2 {
+    background-color: whitesmoke;
+}
+
+.btn-view-menu {
+    background-color:#e28743;
+    color: white;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .pre-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .container {
+        font-size: 25px;
+    }
+}
